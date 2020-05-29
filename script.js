@@ -86,7 +86,7 @@ const getParameterByName = (name, url) => {
 
 //look for a 'text' query param or supply some default text
 const populateEmptyStage = () => {
-  const defaultString = 'lian   huiyu  今天上班       很累嗎';
+  const defaultString = 'lian   huiyu  明天上班       加油喔';
   const string = getParameterByName('text') || defaultString;
   const stage = document.querySelector('.stage');
   string.split('').forEach( character => {
